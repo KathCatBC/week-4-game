@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Gem Game</title>
+
+ <!-- Using reset due to HW directions -->
+
+		<link rel="stylesheet" type="text/css" href="assets/css/reset.css"> 
+
+		<link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/journal/bootstrap.min.css" rel="stylesheet">
+
+
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+		
+	</head>
+<body>
+
+
+<div class="panel panel-info panel-margin">
+  <div class="panel-heading">
+    <h3 class="panel-title">How to Play</h3>
+  </div>
+  <div class="panel-body rules-content">
+    You will be given a random number at the start of the game.<br>There are four crystals below.  By clicking on a crystal you will add a specific amount of points to your total score.<br>You win the game by matching your total score to a random number, you lose the game if your total score goes above the random number.<br>The value of each crystal is hidden from you until you click on it.<br>Each time the game starts, the game will change the value of each crystal.
+  </div>
+</div>
+
+<div class="panel panel-primary panel-margin">
+  <div class="panel-heading running-score">
+    <h3 class="panel-title">Wins and Loses</h3>
+  </div>
+  <div class="panel-body total-score">
+    
+  </div>
+</div>
+
+
+<div class="well well-lg panel-margin">
+  <div id="currentscore"></div>
+</div>
+
+<div class="well well-lg panel-margin">
+
+<div id="display"> </div>
+<div id="buttons"></div>
+<div id="button"></div>
+
+</div>
+
+
+	<script type='text/javascript' src='https://code.jquery.com/jquery-2.2.0.min.js'></script>
+
+	<script src='assets\javascript\game.js'></script>
+	 <script type='text/javascript'></script>
+
+	console.log("loaded the file");
+
+
+</body>
+
+</html>
