@@ -34,6 +34,16 @@ body {
 	/*float: left;*/
 
 }
+#currentscore {
+	width: 50%;
+	background-color: azure;
+}
+
+#userScoreDisp {
+	margin-left: 20px
+	background-color: wheat;
+}
+
 
 button {
 	height: 80px;

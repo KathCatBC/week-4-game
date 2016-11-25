@@ -2,8 +2,6 @@
 
 
 var gemArr = ["gemA", "gemB", "gemC", "gemD"]
-var gemPic = []
-
 var imgstring = "";
 var neededScore = 0;
 var userScore = 0;
@@ -12,9 +10,14 @@ var lostNumber = 0;
 
 var i = 0 // loop counter
 
-// Generate random number for score needed between 19 & 120
-// look up how to generate a 
+var winlostdisplay = document.querySelector(".total-score");
+  
+  // need to make this prettier
+  winlostdisplay.innerHTML = ("Wins: " + winNumber + "   Lost:  "+ lostNumber);
+    $("#userScoreDisp").text(userScore);
 
+
+// $("#currentscore").text(neededScore);
 
 
    for (i=0; i<gemArr.length; i++) {
@@ -24,7 +27,7 @@ var i = 0 // loop counter
   		imgstring = "url(assets/images/gem" + i + ".png)";
         // imgstring = "url(../week-4-game/assets/images/gem" + i + ".png)";
   		// imgstring = "<img src=assets/images/gem" + i + ".png>";
-  		console.log(imgstring);
+  		// console.log(imgstring);
   		gemBtn.css("background-image", imgstring);
 
   		 		
@@ -53,15 +56,10 @@ $("#currentscore").text(neededScore);
     $(".bttn").on("click", function() {
         var gemValue = $("<div>");   
         
-        console.log($(this).data("gem")); 
+        // console.log($(this).data("gem")); 
         userScore = userScore + $(this).data("gem");
-        console.log(userScore);
+       // console.log(userScore);
+        $("#userScoreDisp").text("current score = " + userScore);
 })
 
 
-
-    // $(".letter-button").on("click", function() {
-    //     var fridgeMagnet = $("<div>");   
-    //     fridgeMagnet.addClass("letter fridge-color");
-    //     fridgeMagnet.text($(this).data("data-letter")); 
-    //     }
