@@ -14,6 +14,9 @@ body {
 	/*font-family:  'Georgia', Times, Times New Roman, serif;*/
 }
 
+#currentscore {
+	font-size: 18px;
+}
 
 .panel-margin {
 	margin: 0px 150px;
@@ -25,14 +28,18 @@ body {
 }
 
 .bttn {
-	height: 40px;
-	width: 40px;
-	margin: 0px 20px;
+	height: 128px;
+	width: 128px;
+	margin: 0px 20px 10px 0px;
+	/*float: left;*/
+
 }
 
-.button {
+button {
 	height: 80px;
 	width: 80px;
+	float: left;
+	/*background-image: url("../images/gem1.png");*/
 }
 
 h2 {

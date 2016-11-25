@@ -4,11 +4,11 @@
 var gemArr = ["gemA", "gemB", "gemC", "gemD"]
 var gemPic = []
 
-var imgstring = ""
-var neededScore = 0
-var userScore = 0
-var winNumber = 0
-var lostNumber = 0
+var imgstring = "";
+var neededScore = 0;
+var userScore = 0;
+var winNumber = 0;
+var lostNumber = 0;
 
 var i = 0 // loop counter
 
@@ -21,19 +21,27 @@ var i = 0 // loop counter
   		var gemBtn = $("<button>");
   		gemBtn.addClass("bttn");
   		gemBtn.attr("data-gem", Math.floor((Math.random() * 12) + 1));
-  		imgstring = "<img src=assets/images/gem" + i + ".png>";
-  		console.log(imgstring);  		
+  		imgstring = "url(assets/images/gem" + i + ".png)";
+        // imgstring = "url(../week-4-game/assets/images/gem" + i + ".png)";
+  		// imgstring = "<img src=assets/images/gem" + i + ".png>";
+  		console.log(imgstring);
+  		gemBtn.css("background-image", imgstring);
+
+  		 		
 // need to change relative path for images
-  		gemBtn.text = "button text";
-  
+  		// gemBtn.text(i);
+  		
         $("#buttons").append(gemBtn);
 }
 
 
 
 // Generate a random numbers for Gems A - D between 1 & 12 
-
+ 
 neededScore = Math.floor((Math.random() * 120) + 19);
+$("#currentscore").text(neededScore);
+
+//console.log(neededScore);
 
 // On click event for each gem
 // add number to userScore
@@ -42,4 +50,18 @@ neededScore = Math.floor((Math.random() * 120) + 19);
 // if > neededScore user lost - lostNumber++
 // if < needScore keep playing
 
+    $(".bttn").on("click", function() {
+        var gemValue = $("<div>");   
+        
+        console.log($(this).data("gem")); 
+        userScore = userScore + $(this).data("gem");
+        console.log(userScore);
+})
 
+
+
+    // $(".letter-button").on("click", function() {
+    //     var fridgeMagnet = $("<div>");   
+    //     fridgeMagnet.addClass("letter fridge-color");
+    //     fridgeMagnet.text($(this).data("data-letter")); 
+    //     }
