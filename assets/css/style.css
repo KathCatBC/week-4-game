@@ -22,35 +22,42 @@ body {
 	margin: 0px 150px;
 }
 
-#buttons {
+/*#buttons {
 	height: 400px;
 	width: 400px;
-}
+}*/
 
 .bttn {
 	height: 128px;
 	width: 128px;
 	margin: 0px 20px 10px 0px;
-	/*float: left;*/
+	padding: 0px;
+
 
 }
+
+
+.gemPanel {
+	padding: 20px;
+	text-align: justify-all;
+}
+
+#buttons {
+	text-align: justify;
+}
+
+#winCountDesc, #lostCountDesc {
+	text-align: right;
+}
+
 #currentscore {
-	width: 50%;
 	background-color: azure;
 }
 
 #userScoreDisp {
-	margin-left: 20px
 	background-color: wheat;
 }
 
-
-button {
-	height: 80px;
-	width: 80px;
-	float: left;
-	/*background-image: url("../images/gem1.png");*/
-}
 
 h2 {
 	text-align: center;
