@@ -14,63 +14,42 @@ body {
 	/*font-family:  'Georgia', Times, Times New Roman, serif;*/
 }
 
-#currentscore {
+/*#currentscore {
 	font-size: 18px;
 }
-
+*/
 .panel-margin {
 	margin: 0px 150px;
 }
-
-/*#buttons {
-	height: 400px;
-	width: 400px;
-}*/
 
 .bttn {
 	height: 128px;
 	width: 128px;
 	margin: 0px 20px 10px 0px;
 	padding: 0px;
-
-
 }
 
+.rAlign {
+	text-align: right;
+	font-size: 18px;
+}
 
 .gemPanel {
 	padding: 20px;
 	text-align: justify-all;
 }
 
-#buttons {
-	text-align: justify;
-}
-
-#winCountDesc, #lostCountDesc {
-	text-align: right;
-}
-
-#currentscore {
-	background-color: azure;
-}
-
-#userScoreDisp {
-	background-color: wheat;
-}
 
 
-h2 {
+h2, h3 {
 	text-align: center;
 }
 
-h3 {
-	text-align: center;
-}
 
-#displayResults {
+/*#displayResults {
 	width: 50%;
 	float: left;
-}
+}*/
 .panelalign {
 	margin: 0px 50px 0px 50px;
 	/*padding: 0px 5px 0px 5px;*/
@@ -80,15 +59,13 @@ h3 {
 	margin: 0px 50px 0px 50px;
 }
 
-
-
 .headingtxt {
 	font-weight: bold;
 	font-size: 15px;
 	color: white;
 }
 
-.footerset {
+/*.footerset {
 	font-family: sans-serif;
 	text-align: center;
 	height: 35px;
@@ -99,7 +76,6 @@ h3 {
 
 }
 
-/*Why did this upload to GitHub but not heroku*/
-
+*/
 
 
