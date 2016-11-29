@@ -14,10 +14,10 @@ body {
 	/*font-family:  'Georgia', Times, Times New Roman, serif;*/
 }
 
-/*#currentscore {
+.total-score {
 	font-size: 18px;
 }
-*/
+
 .panel-margin {
 	margin: 0px 150px;
 }
@@ -31,7 +31,6 @@ body {
 
 .rAlign {
 	text-align: right;
-	font-size: 18px;
 }
 
 .gemPanel {
