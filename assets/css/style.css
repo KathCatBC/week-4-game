@@ -33,6 +33,10 @@ body {
 	text-align: right;
 }
 
+.cAlign {
+	text-align: center;
+}
+
 .gemPanel {
 	padding: 20px;
 	text-align: justify-all;

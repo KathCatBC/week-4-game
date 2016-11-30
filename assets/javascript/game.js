@@ -12,49 +12,57 @@ var i = 0 // loop counter
 
 var x = setvar()  
 
-
 $(document).on('click', ".bttn", function() {
+            
+    userScore = userScore + Number($(this).attr("data-gem"));
+    $("#userScoreDisp").text(userScore);
 
-        var gemValue = $("<div>");            
-        userScore = userScore + $(this).data("gem");
-        $("#userScoreDisp").text(userScore);
-
-        if (userScore > neededScore) {
-          alert("Sorry, You Lost");
-          lostNumber++;
-          $("#lostCount").text(lostNumber);
-          x = setvar();
-           }
-
-        else if (userScore == neededScore){
-          alert("Congratulations! You Won");
-          winNumber++;
-          $("#winCount").text(winNumber);
-          x = setvar();
-         }
+    if (userScore > neededScore) {
+      // $("#wonorlostU").html("<h4>You</h4>")
+      //  $("#wonorlost").html("<h4>Lost</h4>")
+      lostNumber++;
+      $("#lostCount").text(lostNumber);
+      x = resetvar();
+    }
+    else if (userScore == neededScore){
+          // $("#wonorlostU").html("<h4>You</h4>")
+          // $("#wonorlost").html("<h4>Won!</h4>")
+      winNumber++;
+      $("#winCount").text(winNumber);
+      x = resetvar();
+    }
   })  //end of on click function
 
 
 function setvar() {
-    console.log("in setvar function")
-    
-    userScore = 0;
     $("#userScoreDisp").text(userScore);
-    $("#buttons").empty();  //remove initial genms or it will duplicate
+    $("#buttons").empty();  //make sure #buttons is empty
     
     for (i=0; i<gemArr.length; i++) {
-      console.log("loop #" + i);
       gemBtn = $("<button>");
       gemBtn.addClass("bttn");
       gemBtn.attr("data-gem", Math.floor((Math.random() * 12) + 1));
       gemBtn.css("background-image", "url(assets/images/gem" + i + ".png)");
-       $("#buttons").append(gemBtn);
+      $("#buttons").append(gemBtn);
     }  //end of for loop
     
-      neededScore = Math.floor((Math.random() * 120) + 19);
-      $("#currentscore").text(neededScore);
-      console.log("end of setvar function");
+    neededScore = Math.floor((Math.random() * 120) + 19);
+    $("#currentscore").text(neededScore);
+      // console.log("end of setvar function");
 }  // end of setvar function
     
 
-
+function resetvar(){
+    
+  for (i=0; i<gemArr.length; i++) {
+    $(".bttn").eq(i).attr("data-gem", Math.floor((Math.random() * 12) + 1));
+  }
+      // reset score variables
+      neededScore = Math.floor((Math.random() * 120) + 19);
+      $("#currentscore").text(neededScore);
+      userScore = 0;
+       $("#userScoreDisp").text(userScore);
+      // $("#wonorlost").html("");
+      // $("#wonorlostU").html("");
+}  // end of resetvar
+// }
