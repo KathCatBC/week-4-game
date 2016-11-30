@@ -37,7 +37,7 @@ $(document).on('click', ".bttn", function() {
       $("#winCount").text(winNumber);
       x = resetvar();
     }
-  })  //end of on click function
+})  //end of on click function
 
 
 function setvar() {
@@ -52,7 +52,7 @@ function setvar() {
       $("#buttons").append(gemBtn);
     }  //end of for loop
     
-    neededScore = Math.floor((Math.random() * 120) + 19);
+    neededScore = Math.floor((Math.random() * 101) + 19);
     $("#currentscore").text(neededScore);
       // console.log("end of setvar function");
 }  // end of setvar function
@@ -64,7 +64,7 @@ function resetvar(){
     $(".bttn").eq(i).attr("data-gem", Math.floor((Math.random() * 12) + 1));
   }
     // reset score variables
-    neededScore = Math.floor((Math.random() * 120) + 19);
+    neededScore = Math.floor((Math.random() * 101) + 19);
     $("#currentscore").text(neededScore);
     userScore = 0;
     $("#userScoreDisp").text(userScore);
