@@ -18,6 +18,11 @@ body {
 	font-size: 18px;
 }
 
+.wlStatus {
+	font-size: 24px;
+	font-weight: bold;
+}
+
 .panel-margin {
 	margin: 0px 150px;
 }
