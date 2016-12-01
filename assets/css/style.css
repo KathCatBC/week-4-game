@@ -23,15 +23,13 @@ body {
 	font-weight: bold;
 }
 
-.panel-margin {
-	margin: 0px 150px;
-}
 
 .bttn {
 	height: 128px;
 	width: 128px;
-	margin: 0px 20px 10px 0px;
-	padding: 0px;
+	margin: 10px 20px 10px 20px;
+	padding: 10px;
+	text-align: center;
 }
 
 .rAlign {
@@ -42,9 +40,8 @@ body {
 	text-align: center;
 }
 
-.gemPanel {
-	padding: 20px;
-	text-align: justify-all;
+/*.gemPanel {
+	padding: 20px;*/
 }
 
 
@@ -58,14 +55,11 @@ h2, h3 {
 	width: 50%;
 	float: left;
 }*/
-.panelalign {
-	margin: 0px 50px 0px 50px;
+.panelalign, .statusalign, .panel-margin {
+	margin: 0px 100px ;
 	/*padding: 0px 5px 0px 5px;*/
 }
 
-.statusalign {
-	margin: 0px 50px 0px 50px;
-}
 
 .headingtxt {
 	font-weight: bold;
