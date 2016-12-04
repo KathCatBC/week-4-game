@@ -54,7 +54,6 @@ function setvar() {
     
     neededScore = Math.floor((Math.random() * 101) + 19);
     $("#currentscore").text(neededScore);
-      // console.log("end of setvar function");
 }  // end of setvar function
     
 

@@ -8,10 +8,7 @@
 
 body {
 	background: url("../images/asanoha-400px.png");
-	/*border: solid;*/
-	/*border-width: 1px;*/
-	/*border-color: #dddddd;*/
-	/*font-family:  'Georgia', Times, Times New Roman, serif;*/
+
 }
 
 .total-score {
@@ -40,21 +37,12 @@ body {
 	text-align: center;
 }
 
-/*.gemPanel {
-	padding: 20px;*/
-}
-
-
 
 h2, h3 {
 	text-align: center;
 }
 
 
-/*#displayResults {
-	width: 50%;
-	float: left;
-}*/
 .panelalign, .statusalign, .panel-margin {
 	margin: 0px 100px ;
 	/*padding: 0px 5px 0px 5px;*/
@@ -67,17 +55,6 @@ h2, h3 {
 	color: white;
 }
 
-/*.footerset {
-	font-family: sans-serif;
-	text-align: center;
-	height: 35px;
-	width: 100%;
-	position:absolute;
-	bottom: 0;
-	left:0;
 
-}
-
-*/
 
 
