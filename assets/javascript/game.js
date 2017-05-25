@@ -69,4 +69,3 @@ function resetvar(){
     $("#userScoreDisp").text(userScore);
     clickcount = 0
 }  // end of resetvar
-// }
